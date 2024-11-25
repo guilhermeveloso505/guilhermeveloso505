@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    main img {
+        width: 51.5vh;
+        height: 20vh;
+    }
+
+    form button {
+        position: relative;
+        right: 15px;
+    }
+
+    form button:hover {
+        background: none;
+    }
+
+    .container-resumo p {
+        color: #fff;
+        width: 40vh;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+
+    .container-personagens p {
+        color: #fff;
+        width: 40vh;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+    .container-personagens h1 {
+        font-size: 40px;
+    }
+
+    .personagem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .container-anime p {
+        color: #fff;
+        width: 40vh;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+
+    .container-anime h1 {
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+
+    .contatos button {
+        font-size: 20px;
+    }
+
+}

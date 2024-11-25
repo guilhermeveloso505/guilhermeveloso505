@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinland Saga</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+   <div id="container">
+     <!--Apresentação do site-->
+     <header>
+        <div class="tab-buttons">
+             <button class="tab-btn active" content-id="resumo">
+                 Resumo
+             </button>
+
+             <button class="tab-btn" content-id="personagens">
+                Personagens
+            </button>
+
+            <button class="tab-btn" content-id="anime">
+                Anime
+            </button>
+            
+            <button id="toggleButton">Modo Escuro</button>
+        </div>
+        
+     </header>
+ 
+         <!--Conteúdo-->
+
+     <div class="tab-contents">
+            <div class="content show" id="resumo">
+                <div class="infos">
+
+        <!--Resumo(tela inicial)-->
+
+                    <main>
+                        <img src="./imgs/capa1.jpeg" class="content-img" alt="capa">
+                        <div class="container-resumo">
+
+                            <h1 class="content-title">Resumo</h1>
+                            <p>O jovem Thorfinn cresceu ouvindo as histórias de antigos marinheiros que haviam viajado pelo oceano e alcançou o lugar da lenda, Vinland. Diz -se que é quente e fértil, um lugar onde não haveria necessidade de lutar - não como a vila congelada na Islândia, onde ele nasceu, e certamente não como sua vida atual como mercenário.
+                                A guerra é sua casa agora. Embora seu pai tenha dito uma vez: "Você não tem inimigos, ninguém tem. Não há ninguém que não seja bom machucar", quando ele cresceu, Thorfinn sabia que nada estava mais longe da verdade.</p>
+                            <p>A guerra entre a Inglaterra e os dinamarqueses piora a cada ano que passa. A morte tornou -se comum e os mercenários viking estão amando cada momento. O alheio de ambos os lados causará um grande balanço no equilíbrio de poder, e os vikings ficarão felizes em fazer nomes para si mesmos e tomar quaisquer despojos que ganham ao longo do caminho.
+                                Entre o caos, Thorfinn deve se vingar e matar Askeladd, o homem que assassinou seu pai. O único paraíso para os vikings, ao que parece, é a era da guerra e da morte que se enfurece.</p>
+                        </div>
+
+                            <div class="contatos">
+                                <h2>Contatos</h2>
+                            <p>Para entrar em contato, preencha o formulário abaixo: </p>
+                            <form>
+                                <input type="text" placeholder="Nome">
+                                <input type="text" placeholder="E-mail">
+                                <button class="contato" onclick="enviar()" id="envio" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+       
+        <!--Aba de personagens-->
+
+        <div class="tab-contents">
+            <div class="content" id="personagens">
+                <div class="infos">
+                    <main>
+                        <img src="./imgs/capa2.jpeg" class="content-img" alt="capa">
+                        <div class="container-personagens">
+
+                            <h1 class="content-title">Personagens</h1>
+
+                            <ul class="personagens-lista">
+                                <li class="personagem">
+                                    <img src="./imgs/thorfinn.jpg" alt="Personagem 1">
+                                    <div class="personagem-info">
+                                        <h2>Thorfinn</h2>
+                                        <p>
+                                            Thorfinn nasceu em uma pequena aldeia da Islândia, sendo filho de Thors, um lendário guerreiro que, após abandonar a vida de combate, tenta viver em paz com sua família.
+                                            Porém, quando Thors é morto por mercenários liderados por Askeladd, Thorfinn jura vingança e passa a servir a Askeladd, com o objetivo de matá-lo.
+                                        </p>
+                                        <p>
+                                            Dentre suas habilidades Thorfinn é um combatente excepcionalmente habilidoso, principalmente no uso de duas adagas. Sua habilidade em combate é desenvolvida ao longo de anos servindo como guerreiro, realizando embates sangrentos e desafiadores, o que o torna um lutador extremamente rápido, ágil e estratégico. 
+                                            Mesmo sendo jovem, Thorfinn é um guerreiro formidável, conhecido por sua destreza e resistência, além de possuir uma grande capacidade de adaptação às situações de batalha.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="personagem">
+                                    <img src="./imgs/thors.jpg" alt="Personagem 2">
+                                    <div class="personagem-info">
+                                        <h2>Thors</h2>
+                                        <p>
+                                            Seu nome completo é Thors Snorresson, e ele é um guerreiro viking lendário que abandona a vida de batalha para buscar a paz e a tranquilidade com sua família.
+                                            Thors era um dos guerreiros mais temidos e respeitados de sua época, com uma reputação de força imensurável. Ele era filho de Snorri, o chefe de uma aldeia, e, após uma série de batalhas, decidiu deixar a vida de guerra e se refugiar na Islândia com sua esposa Helga e filhos, incluindo Thorfinn. 
+                                            Thors se estabeleceu como um agricultor e passou a viver uma vida pacífica, buscando afastar-se das disputas e da violência, acreditando que a verdadeira força vinha da proteção e cuidado com os entes queridos.
+                                        </p>
+                                        <p>
+                                            Thors era um guerreiro excepcionalmente habilidoso, com grande força física e destreza em combate. Sua habilidade com a espada e outros armamentos era lendária, e ele possuía uma resistência que o tornava praticamente imbatível em combate. No entanto, o que o diferenciava era sua filosofia de vida. 
+                                            Embora fosse mais que capaz de vencer batalhas, ele rejeitava a violência e a morte desnecessárias, preferindo soluções pacíficas para conflitos.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="personagem">
+                                    <img src="./imgs/thorkel.jpg" alt="Personagem 3">
+                                    <div class="personagem-info">
+                                        <h2>Thorkel</h2>
+                                        <p>
+                                            Thorkell o Alto, é um veterano guerreiro viking e tio de Thorfinn (o protagonista), sendo irmão de Thors, o pai de Thorfinn. Ele é um dos maiores heróis da saga, famoso por suas façanhas em combate e por sua lealdade aos seus princípios. 
+                                            Thorkell começa como um aliado de Askeladd em algumas partes da história, sendo um líder temido e respeitado, mas também tem seu próprio código de honra e um espírito independente.
+                                        </p>
+                                        <p>
+                                            Thorkell é um dos guerreiros mais poderosos da obra, possuindo uma força física impressionante. Sua habilidade em combate é lendária, sendo capaz de enfrentar múltiplos inimigos ao mesmo tempo com facilidade, usando um enorme machado de batalha. 
+                                            Sua resistência e resistência ao dano também são notáveis, pois ele é capaz de suportar ferimentos e continuar lutando com uma determinação feroz.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="personagem">
+                                    <img src="./imgs/Askellad.jpeg" alt="Personagem 4">
+                                    <div class="personagem-info">
+                                        <h2>Askeladd</h2>
+                                        <p>
+                                            Seu nome completo é Lucius Artorius Castus, e ele é um guerreiro e líder de mercenários com um passado misterioso.
+                                            Askeladd é filho de uma mulher viking e de um soldado romano, o que lhe confere uma mistura de culturas e um profundo conhecimento da história de Roma. Ele se torna um líder de uma banda de mercenários que se envolve em diversas batalhas e intrigas ao longo da história. 
+                                            Apesar de ser um homem pragmático e muitas vezes cruel, Askeladd tem uma grande inteligência estratégica e um profundo senso de ambição.
+                                        </p>
+                                        <p>
+                                            Askeladd é um estrategista brilhante e um excelente combatente. Ele não apenas é habilidoso com a espada, mas também é conhecido por sua astúcia e capacidade de manipular as situações a seu favor. Sua maior habilidade, no entanto, é a liderança, sendo capaz de comandar seus homens com maestria, mesmo com um estilo de liderança muitas vezes imoral e calculista. 
+                                            Ele também é um mestre em manipulação psicológica, muitas vezes jogando com as emoções dos outros para alcançar seus próprios objetivos.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="personagem">
+                                    <img src="./imgs/canuti.jpeg" alt="Personagem 5">
+                                    <div class="personagem-info">
+                                        <h2>Canute</h2>
+                                        <p>Canute começa a trama como um príncipe jovem e aparentemente fraco, sendo mais conhecido por sua natureza tímida e sua dependência de outros, especialmente de seu protetor, Askeladd. 
+                                            Inicialmente, ele é visto como um príncipe submisso e medroso, em contraste com a figura imponente de seu pai e outros líderes vikings.
+                                            No entanto, após a morte de seu pai e a sucessão ao trono, Canute passa por uma transformação profunda. Ele começa a entender o poder que possui e a necessidade de liderança, especialmente ao ser forçado a tomar decisões difíceis em meio ao caos político e as batalhas sangrentas. 
+                                            Esse processo de amadurecimento o transforma de um príncipe inseguro em um líder implacável e estrategista, buscando consolidar seu reinado e garantir a estabilidade para seu reino. 
+                                        </p>
+                                        <p>
+                                            Inicialmente, Canute não é um guerreiro, mas sua maior habilidade está em sua capacidade de liderança e manipulação política. Com o tempo, ele desenvolve uma enorme persuasão e uma força de caráter que o tornam capaz de controlar os eventos ao seu redor. 
+                                            Sua habilidade em manobrar alianças, manipular situações e tomar decisões estratégicas se tornam suas principais ferramentas para alcançar seu objetivo de governar.
+                                        </p>
+                                        <p>
+                                            Apesar de sua falta de habilidade física em combate, a transformação de Canute é marcada por uma crescente confiança e uma visão implacável, tornando-o uma figura poderosa não apenas pela força, mas também pela sua habilidade em comandar e governar.
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!--Aba do manga e anime-->
+
+     <div class="tab-contents">
+        <div class="content" id="anime">
+            <div class="infos">
+                <main>
+                    <img src="./imgs/capa3.jpg" alt="capa3">
+                    <div class="container-anime">
+                        <h1 class="content-title">Episódios Favoritos</h1>
+
+                            <div id="anime-item">
+                                <h2>Um guerreiro de verdade</h2>
+                                <img src="./imgs/askeladdVsThros.jpg" alt="Duelo1">
+                                <p>Thors parte pra cima dos homens de Askeladd, derrotando todos que o desafiam. Qual será o desfecho do duelo entre o Troll e Askeladd?</p>
+                               <a href="https://www.crunchyroll.com/pt-br/watch/G2XU0W1Q9/a-true-warrior" target="_blank">
+                                <button>Assistir</button>
+                               </a>
+
+                               <h2>O servo</h2>
+                               <img src="./imgs/askeladdVsAll.webp" alt="">
+                               <p>Bjorn e Thorfinn fogem com o príncipe. Askeladd fica para trás e luta contra seus antigos subordinados até Thorkell, finalmente, chega.</p>
+                               <a href="https://www.crunchyroll.com/pt-br/watch/G8WUN8V0Q/servant">
+                                <button>Assistir</button>
+                               </a>
+
+                               <h2>Fora do berço</h2>
+                               <img src="./imgs/thorfinnVsThorkell.png" alt="Duelo3">
+                               <p>O duelo entre Throfinn e Thorkell começa. O príncipe acorda e, finalmente, descobre sua real ambição.</p>
+                               <a href="https://www.crunchyroll.com/pt-br/watch/GD9UVJZ84/out-of-the-cradle" target="_blank">
+                                <button>Assistir</button>
+                               </a>
+                                
+                            </div>
+
+                    </div>
+
+
+                </main>
+            </div>
+        </div>
+     </div>
+   </div>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
